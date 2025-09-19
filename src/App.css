@@ -143,8 +143,8 @@ body {
 }
 
 .about-text h1 {
-  font-size: rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
   color: var(--primary-color);
 }
 
@@ -375,7 +375,7 @@ body {
 
 .activity-section h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-bottom: 3rem;
   color: black;
 }
@@ -510,16 +510,52 @@ body {
   transform: scale(1.2);
 }
 
-/* Modal */
+/* Modal Overlay */
 .modal {
-  padding: 30px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7); /* ครอบหน้าจอมืด */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  cursor: pointer;
 }
 
+/* Modal Image */
 .modal-content {
-  max-width: 90%; 
+  max-width: 90%;
   max-height: 80%;
   border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+  cursor: default;
 }
+
+/* ปุ่มปิด × */
+.modal .close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 2100;
+}
+
+.modal .close:hover {
+  color: #ff69b4;
+}
+
+/* หยุด event propagation เมื่อคลิกที่รูป ไม่ให้ปิด modal */
+.modal-content {
+  pointer-events: auto;
+}
+
 
 /* Responsive Media Queries */
 @media screen and (max-width: 480px) {
