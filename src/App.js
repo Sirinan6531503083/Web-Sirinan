@@ -142,10 +142,11 @@ function App() {
           <div className="about-text">
             <h2>Welcome to my Portfolio</h2>
             <h1>Sirinan Hongdamnean</h1>
-            <h4>Front -  End Developer (Internship)</h4>
+            <h4>Web developer  (Internship)</h4>
             <p>
-              Fourth-year Software Engineering student with strong interest and proficiency in Front-End development for websites and applications. <br /><br />
-              Skilled in team collaboration, with a solid understanding of UI/UX design principles and a strong sense of responsibility. Eager to learn new technologies continuously and committed to developing skills to become a professional Front-End Developer.
+             Fourth-year Software Engineering student seeking a Web Developer Internship, with strong interest and proficiency in Front-End development for websites and web applications. <br /><br />
+             Skilled in team collaboration, with solid understanding of UI/UX design principles and a strong sense of responsibility. <br /><br />
+             Passionate about creating user-friendly, visually appealing, and responsive web experiences, with the goal of contributing to innovative projects while continuously developing skills to grow into a professional Front-End Developer.
             </p>
           </div>
         </div>
